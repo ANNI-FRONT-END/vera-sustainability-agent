@@ -26,7 +26,7 @@ function VeraChat({ userName, setUserName, onUserReady }) {
 
   const askBackend = async (question) => {
     try {
-      const response = await fetch("https://vera-sustainability-backend.onrender.com", {
+      const response = await fetch("https://vera-sustainability-backend.onrender.com/ask", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
